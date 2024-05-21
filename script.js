@@ -171,15 +171,16 @@ function displayArrayInTable(array) {
   });
 }
 
-const alert = document.getElementById("al1");
+const alert = document.getElementById("no-records");
 // Function to add a new row
 function addRow() {
+  alert.style.display = "none";
   if (dataAdd.length < 6) {
     const index = dataAdd.length + 1;
     dataAdd.push("Item" + index); // Adding a default value (Item) to the array
     displayArrayInTable(dataAdd);
   } else {
-    window.alert("Em iuuu tham thế :)). Em add tối đa 6 items thui nhó !!!");
+    window.alert("Em iuuu tham thế :)). Add tối đa 6 items thui nhó !!!");
   }
 }
 
@@ -187,9 +188,13 @@ function addRow() {
 function deleteRow(index) {
   dataAdd.splice(index, 1);
   displayArrayInTable(dataAdd);
+  if (dataAdd.length == 0) {
+    alert.style.display = "block";
+  }
 }
 
 function resetListAdd() {
+  alert.style.display = "block";
   dataAdd = [];
   displayArrayInTable(dataAdd);
 }

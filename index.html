@@ -25,7 +25,7 @@
   <div class="wrapper">
     <button type="button" style="margin: 0 0 1.5em 0;font-size: 15px;" class="btn btn-success" data-bs-toggle="modal"
       data-bs-target="#myModal">
-      Add nào !!
+      List Items
     </button>
     <div class="container">
       <canvas id="wheel"></canvas>
@@ -33,7 +33,7 @@
       <img src="arrow-left.png" alt="spinner arrow" />
     </div>
     <div id="final-value">
-      <p style="font-size: 15px;margin: 0;" class="alert alert-warning">Em nhấn vào SPIN để quay nhó ạ !!!</p>
+      <p style="font-size: 15px;margin: 0;font-weight: bolder;" class="alert alert-warning">Em nhấn vào SPIN để quay nhó ạ !!!</p>
     </div>
   </div>
   </div>
@@ -45,8 +45,8 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <p class="modal-title">Mời cục cưng thêm danh sách ramdom nhaa!!!</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <p class="modal-title text-center" style="width: 100%;font-weight: bolder;">Mời cục cưng thêm danh sách ramdom nhaa!!!</p>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
         </div>
 
         <!-- Modal body -->
@@ -63,10 +63,11 @@
               <!-- Rows will be added here by JavaScript -->
             </tbody>
           </table>
+          <p id="no-records" class="alert alert-danger text-center" style="width: 100%;font-weight: bolder;margin: 0;">Khum có item nào đc thêm ạ !!!</p>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" onclick="resetListAdd()">Reset List</button>
+          <button type="button" class="btn btn-success" onclick="resetListAdd()">Delete List</button>
           <button type="button" class="btn btn-primary" onclick="addRow()">Add Item</button>
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
