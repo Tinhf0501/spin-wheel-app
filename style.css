@@ -8,9 +8,8 @@ body {
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
 }
 .wrapper {
-  /* margin: 50px 0; */
   overflow: auto;
-  max-width: 34.37em;
+  max-width: 100%;
   background-color: #ffffff;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -26,8 +25,8 @@ body {
   height: 100%;
 }
 #wheel {
-  max-height: inherit;
-  width: inherit;
+  height: 90%;
+  width: 90%;
 }
 @keyframes rotate {
   100% {
