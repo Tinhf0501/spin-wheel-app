@@ -71,7 +71,7 @@ const valueGenerator = (angleValue) => {
         finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-warning">Em quay lại lượt mới nhaaa <333</p>`;
         window.alert("Item này chưa đc add nhó. Em iuu add thêm hoặc quay lượt mới nha. hic hic :(((");
       } else {
-        finalValue.innerHTML = `<p>Value: ${dataAdd[i.value - 1]}</p>`;
+        finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-success">Và điều em mong chờ là: ${dataAdd[i.value - 1]}</p>`;
       }
       spinBtn.disabled = false;
       break;
