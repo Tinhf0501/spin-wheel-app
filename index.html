@@ -18,24 +18,23 @@
     crossorigin="anonymous"></script>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  build
-  <div class="b-wrapper">
-    <div class="wrapper">
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
-        Add nào !!
-      </button>
-      <div class="container">
-        <canvas id="wheel"></canvas>
-        <button id="spin-btn">Spin</button>
-        <img src="arrow-left.png" alt="spinner arrow" />
-      </div>
-      <div id="final-value">
-        <p style="font-size: 15px;" class="alert alert-warning">Em nhấn vào SPIN để quay nhó ạ !!!</p>
-      </div>
+  <div class="wrapper">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+      Add nào !!
+    </button>
+    <div class="container">
+      <canvas id="wheel"></canvas>
+      <button id="spin-btn">Spin</button>
+      <img src="arrow-left.png" alt="spinner arrow" />
     </div>
+    <div id="final-value">
+      <p style="font-size: 15px;" class="alert alert-warning">Em nhấn vào SPIN để quay nhó ạ !!!</p>
+    </div>
+  </div>
   </div>
 
   <!-- The Modal -->
@@ -73,14 +72,13 @@
 
       </div>
     </div>
-  </div>
-  <!-- Chart JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-  <!-- Chart JS Plugin for displaying text over chart -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
-  <!-- Script -->
-  <script src="script.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
