@@ -115,7 +115,7 @@ spinBtn.addEventListener("click", () => {
       }
     }, 10);
   } else {
-    window.alert("Sao Em iuuu chưa thêm gì vào danh sách mà đã quay thế. hic hic :(((");
+    window.alert("Em iuuu chưa thêm gì vào danh sách mà đã quay thế. hic hic :(((");
   }
 
 });
@@ -175,7 +175,8 @@ const alert = document.getElementById("al1");
 // Function to add a new row
 function addRow() {
   if (dataAdd.length < 6) {
-    dataAdd.push("Item"); // Adding a default value (Item) to the array
+    const index = dataAdd.length + 1;
+    dataAdd.push("Item" + index); // Adding a default value (Item) to the array
     displayArrayInTable(dataAdd);
   } else {
     window.alert("Em iuuu tham thế :)). Em add tối đa 6 items thui nhó !!!");

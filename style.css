@@ -86,3 +86,14 @@ th, td {
 button {
   margin-top: 10px;
 }
+@media screen and (min-width: 769px) {
+  .wrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
