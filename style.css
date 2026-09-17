@@ -697,6 +697,19 @@ html[data-theme="dark"] .moon-icon {
   border-top: 1px solid var(--line);
 }
 
+.wheel-history {
+  margin-top: 18px;
+}
+
+.wheel-history .list-heading {
+  margin-top: 17px;
+}
+
+.wheel-history .history-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+}
+
 .history-list {
   display: grid;
   gap: 7px;
@@ -1212,6 +1225,7 @@ footer span:first-child {
   .add-button span:last-child { display: none; }
   .add-button { padding: 0 15px; font-size: 1.2rem; }
   .result-card strong { white-space: normal; }
+  .wheel-history .history-list { grid-template-columns: 1fr; }
   footer { display: block; text-align: center; }
   footer span { display: block; margin-bottom: 5px; }
   .result-toast {

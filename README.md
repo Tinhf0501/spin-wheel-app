@@ -24,6 +24,7 @@
 4. Xem kết quả trên vòng quay, toast và mục **Kết quả quay gần đây**.
 
 Trên mobile và tablet, nhấn nút **Tùy chỉnh · số lượng** để mở danh sách lựa chọn.
+Khi giao diện chuyển thành một cột, kết quả quay gần đây được đặt ngay dưới vòng quay; trên desktop, phần này nằm trong cột tùy chỉnh bên phải.
 
 ## Giới hạn
 

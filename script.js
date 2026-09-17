@@ -61,6 +61,9 @@ const elements = {
   confirmMessage: document.getElementById("confirm-message"),
   confirmCancel: document.getElementById("confirm-cancel"),
   confirmAccept: document.getElementById("confirm-accept"),
+  historySection: document.getElementById("history-section"),
+  compactHistorySlot: document.getElementById("compact-history-slot"),
+  desktopHistorySlot: document.getElementById("desktop-history-slot"),
 };
 
 const context = elements.wheel.getContext("2d");
@@ -630,10 +633,14 @@ function syncControlsDialog(event) {
   const isMobile = event.matches;
 
   if (isMobile) {
+    elements.historySection.classList.add("wheel-history");
+    elements.compactHistorySlot.append(elements.historySection);
     if (elements.controlsDialog.open) elements.controlsDialog.close();
     return;
   }
 
+  elements.historySection.classList.remove("wheel-history");
+  elements.desktopHistorySlot.append(elements.historySection);
   if (elements.controlsDialog.open) elements.controlsDialog.close();
   elements.controlsDialog.setAttribute("open", "");
 }

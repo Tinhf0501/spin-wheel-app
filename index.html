@@ -81,6 +81,8 @@
             <strong id="result-value">Thêm ít nhất 2 lựa chọn để bắt đầu</strong>
           </div>
         </div>
+
+        <div id="compact-history-slot"></div>
       </article>
 
       <dialog id="controls-dialog" class="controls-dialog" aria-labelledby="controls-title" open>
@@ -125,14 +127,17 @@
             </div>
           </div>
 
-          <section class="history-section" aria-labelledby="history-title">
-            <div class="list-heading">
-              <span id="history-title">Kết quả quay gần đây</span>
-              <button id="clear-history-btn" class="text-button" type="button">Xóa kết quả</button>
-            </div>
-            <ol id="history-list" class="history-list"></ol>
-            <p id="history-empty" class="history-empty">Chưa có kết quả quay nào.</p>
-          </section>
+          <div id="desktop-history-slot">
+            <section id="history-section" class="history-section" aria-labelledby="history-title">
+              <div class="list-heading">
+                <span id="history-title">Kết quả quay gần đây</span>
+                <button id="clear-history-btn" class="text-button" type="button">Xóa kết quả</button>
+              </div>
+              <ol id="history-list" class="history-list"></ol>
+              <p id="history-empty" class="history-empty">Chưa có kết quả quay nào.</p>
+            </section>
+          </div>
+
         </aside>
       </dialog>
     </section>
