@@ -68,10 +68,10 @@ const valueGenerator = (angleValue) => {
     //if the angleValue is between min and max then display it
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
       if (i.value > dataAdd.length) {
-        finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-warning">Em quay lại lượt mới nhaaa <333</p>`;
+        finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-warning">Vợ iuuu quay lại lượt mới nhaaa <333</p>`;
         window.alert("Item này chưa đc add nhó. Em iuu add thêm hoặc quay lượt mới nha. hic hic :(((");
       } else {
-        finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-success">Và điều em mong chờ là: ${dataAdd[i.value - 1]}</p>`;
+        finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-success">Và điều cục cưng mong chờ là: ${dataAdd[i.value - 1]}</p>`;
       }
       spinBtn.disabled = false;
       break;
@@ -88,7 +88,7 @@ spinBtn.addEventListener("click", () => {
   if (dataAdd.length > 0) {
     spinBtn.disabled = true;
     //Empty final value
-    finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-success">Chúc em cầu được ước thấy nhaaa!</p>`;
+    finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-success">Chúc ngừi đẹp cầu được ước thấy nhaaa!</p>`;
     //Generate random degrees to stop at
     let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
     console.log(randomDegree);
@@ -115,7 +115,7 @@ spinBtn.addEventListener("click", () => {
       }
     }, 10);
   } else {
-    window.alert("Em iuuu chưa thêm gì vào danh sách mà đã quay thế. hic hic :(((");
+    window.alert("Vợ iuuu chưa thêm gì vào danh sách mà đã quay thế. hic hic :(((");
   }
 
 });
@@ -180,7 +180,7 @@ function addRow() {
     dataAdd.push("Item" + index); // Adding a default value (Item) to the array
     displayArrayInTable(dataAdd);
   } else {
-    window.alert("Em iuuu tham thế :)). Add tối đa 6 items thui nhó !!!");
+    window.alert("Haiz vợ iuuu tham thế :)). Add tối đa 6 items thui nhó !!!");
   }
 }
 
