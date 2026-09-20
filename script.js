@@ -69,7 +69,7 @@ const valueGenerator = (angleValue) => {
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
       if (i.value > dataAdd.length) {
         finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-warning">Vợ iuuu quay lại lượt mới nhaaa <333</p>`;
-        window.alert("Item này chưa đc add nhó. Em iuu add thêm hoặc quay lượt mới nha. hic hic :(((");
+        window.alert("Item này chưa đc add nhó. Vợ iuu add thêm hoặc quay lượt mới nha. hic hic :(((");
       } else {
         finalValue.innerHTML = `<p style="font-size: 15px;" class="alert alert-success">Và điều cục cưng mong chờ là: ${dataAdd[i.value - 1]}</p>`;
       }
